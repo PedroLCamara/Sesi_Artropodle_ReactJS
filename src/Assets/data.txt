@@ -1,0 +1,19 @@
+1;Formiga;Quantos pares de pata você consegue contar?;Insetos;Vivo em bando em baixo da terra... Vai, essa é fácil!
+2;Lagosta;Esses apêndices são tão modificados que parecem mutantes!;Crustáceos; Sou considerada um prato chique
+3;Escorpião;Essa 'garra' na frente da boca tem um nome, não?;Aracnídeos;Tem uns maluco que me chama de signo
+4;Ácaro;Ele tem um par de patas escondido...;Aracnídeos;Tem gente que diz que nós moramos no seu travesseiro, mas talvez VOCÊ durma na nossa casa
+5;Barata;Veja a cabeça, o tórax e algo mais...;Insetos;Me odeia pq tem inveja!!!
+6;Carangueijo;A cabeça e o tórax parecem ser a mesma coisa...;Crustáceos;Carrego parte do nome de um ão-duro dos desenhos animados
+7;Camarão;Ele parece ter mais de um par de antenas...;Crustáceos;Meu nome no plurar vira um país!
+8;Opilião;Qual será o nome desse par de apêndices?;Aracnídeos;Me confundem com a vizinha só por minha aparência, mas na real eu to no mesmo subgrupo que ela, então não me importo
+9;Borboleta;Veja essas antenas!;Insetos;Sou majestosa e estrela de muuuuuitas surpestições, geralmente associadas a cor das minhas asas
+10;Tatuzinho de jardim;Essa ‘bolinha’ parece ser bem resistente (dentro do possível);Crustáceos;Eu viro uma bolinha >:)
+11;Aranha;Quantos pares de pata você consegue contar?;Aracnídeos;Algumas de mim tem nome de super-heroína! 
+12;Piolho de cobra;Seu corpinho parece ser dividido em três partes;Diplópodes;Me chamam de piolho de um bicho nojento... 
+13;Libélula;Quantos pares de asas você consegue contar?;Insetos;Voo bastante e gosto de água
+14;Lacraia;Cada parte do corpinho aparente ter um par de patas;Quilópodes;Usam meu nome como xingamento...
+15;Carrapato;Ele tem uma coisa pequenina pra morder, que nome é mesmo?;Aracnídeos;Moro em cães e gente que nn toma banho
+16;Mosca;Sua peça bucal é no mínimo, interessante;Insetos;ZiummmmmmmmmmmZiummmmmmmmm 
+17;Louva-deus;Quantos pares de patas você consegue contar?;Insetos;Socorro minha esposa quer me matar
+18;Siri;Cade a cabeça desse bicho?;Crustáceos;De acordo com o ditado, minha boca guarda segredo
+19;Craca;Eu não tentaria quebrar algo assim...;Crustáceos;Sou séssil, tlgd? Tipo carrapato
