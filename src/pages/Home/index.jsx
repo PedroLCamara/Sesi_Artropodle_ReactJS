@@ -50,6 +50,8 @@ export const Home = () => {
             "https://docplayer.com.br/docs-images/94/120746427/images/28-0.jpg"
         ],
         [
+            "https://escolaeducacao.com.br/wp-content/uploads/2020/02/filotraqueia.jpg",
+            "https://escolaeducacao.com.br/wp-content/uploads/2020/02/respiracaotraqueal.jpg"
         ],
         [
             "https://slideplayer.com.br/slide/3277203/11/images/22/Excre%C3%A7%C3%A3o+T%C3%BAbulos+de+Malpighi.jpg",
@@ -59,8 +61,6 @@ export const Home = () => {
             "https://blog.aegro.com.br/wp-content/uploads/2021/02/2-mecanismo-de-acao-dos-inseticidas-neonicotinoides.jpg"
         ],
         [
-            "https://escolaeducacao.com.br/wp-content/uploads/2020/02/filotraqueia.jpg",
-            "https://escolaeducacao.com.br/wp-content/uploads/2020/02/respiracaotraqueal.jpg"
         ],
         [
             "https://static.todamateria.com.br/upload/an/at/anatomiacorporalinseto-1.jpg"
