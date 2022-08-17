@@ -58,7 +58,10 @@ export const Home = () => {
         [
             "https://blog.aegro.com.br/wp-content/uploads/2021/02/2-mecanismo-de-acao-dos-inseticidas-neonicotinoides.jpg"
         ],
-        [],
+        [
+            "https://escolaeducacao.com.br/wp-content/uploads/2020/02/filotraqueia.jpg",
+            "https://escolaeducacao.com.br/wp-content/uploads/2020/02/respiracaotraqueal.jpg"
+        ],
         [
             "https://static.todamateria.com.br/upload/an/at/anatomiacorporalinseto-1.jpg"
         ],
