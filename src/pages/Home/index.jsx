@@ -25,6 +25,58 @@ export const Home = () => {
         'Os quilópodes, cujas principais características são um corpo dividido em cabeça e tronco, bem como um par de antenas e um par de patas por segmento. Vivem no ambiente terrestre, são carnívoros e possuem apêndices que injetam veneno e que auxiliam na captura da presa.',
         'Os diplópodes, cujas principais características são um corpo dividio em corpo alongado e um par de antenas. Alguns autores dividem seu corpo em cabeça e tronco, enquanto outros dividem em cabeça, tórax e abdome. São animais terrestres e se alimentam de vegetais.',
         'Agora que você já sabe as diferenças entre as diferentes classes de artrópodes, eu te desafio a se aventurar pelo atropodle.ooo!'
+    ];
+
+    const imgsModal = [
+        [
+        ],
+        [
+            "https://1.bp.blogspot.com/-ez80vTjSYD0/X9kKjyO3zKI/AAAAAAAAUP4/gO757aUChdMo_iIF0HejCATaiobym8CEACNcBGAsYHQ/s700/vertebrados-invertebrados-caracteristicas-exemplos.png",
+            "https://slideplayer.com.br/slide/2839073/10/images/12/Simetria+Bilateral+1+Plano+de+corte.jpg",
+            "https://pt-static.z-dn.net/files/d33/5533a2277d28b305917755a2fbf9a402.png"
+        ],
+        [
+            "https://www.infoescola.com/wp-content/uploads/2010/03/folhetos-embrionarios.jpg",
+            "https://www.estudopratico.com.br/wp-content/uploads/2015/01/protostomios-blastoporo-e-principais-caracteristicas-1200x675.jpg"
+        ],
+        [
+            "https://www.infoescola.com/wp-content/uploads/2008/04/escorpiao.jpg",
+        ],
+        [
+            "https://i0.wp.com/files.agro20.com.br/uploads/2019/11/Quitina-1.jpg?fit=1024%2C768&ssl=1",
+            "https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/11/muda.jpg"
+        ],
+        [
+            "https://docplayer.com.br/docs-images/94/120746427/images/28-0.jpg"
+        ],
+        [
+        ],
+        [
+            "https://slideplayer.com.br/slide/3277203/11/images/22/Excre%C3%A7%C3%A3o+T%C3%BAbulos+de+Malpighi.jpg",
+            "https://4.bp.blogspot.com/-8P8Ol0jnuiM/XN657kE0EcI/AAAAAAAAHFU/__N48JFnw3MFIXQA-psqVK--M98Ak_VVgCLcBGAs/s1600/gl%2Bverde.jpg"
+        ],
+        [
+            "https://blog.aegro.com.br/wp-content/uploads/2021/02/2-mecanismo-de-acao-dos-inseticidas-neonicotinoides.jpg"
+        ],
+        [],
+        [
+            "https://static.todamateria.com.br/upload/an/at/anatomiacorporalinseto-1.jpg"
+        ],
+        [
+            "https://super.abril.com.br/wp-content/uploads/2018/07/como-a-lagarta-se-transforma-em-borboleta.jpg"
+        ],
+        [
+            "https://blogdoenem.com.br/wp-content/uploads//sites/2/2014/03/aracnideos.png"
+        ],
+        [
+            "https://image.slidesharecdn.com/filoartrpodes04-crustceos-caractersticaseanatomia-140515180206-phpapp01/85/filo-artrpodes-04-crustceos-caractersticas-e-anatomia-14-320.jpg?cb=1400177762"
+        ],
+        [
+            "https://www.mundoecologia.com.br/wp-content/gallery/quilopodes-1/Quil%C3%B3podes-2-1.jpg"
+        ],
+        [
+            "https://image.slidesharecdn.com/artrpodes-oficial-140316093655-phpapp01/85/artrpodes-oficial-16-320.jpg?cb=1394963643"
+        ]
     ]
     const readLevelsData = () => {
         var rawFile = new XMLHttpRequest();
@@ -109,6 +161,15 @@ export const Home = () => {
                     <span>{
                             textModal[page]
                         }</span>
+                    <div className="images">
+                        {
+                            imgsModal[page] !== undefined &&
+                            imgsModal[page].map((imageSrc) => {
+                                if(imageSrc !== null)
+                                    return <img src={imageSrc}></img>
+                            })
+                        }
+                    </div>
                 </div>
                 <button onClick={(e) => nextPage(e)} className="arrow-right arrow"><img src={right}></img></button>
             </div>

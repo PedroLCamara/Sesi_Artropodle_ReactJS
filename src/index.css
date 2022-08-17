@@ -242,3 +242,13 @@ h1{
   font-family: Sansation-Regular;
   cursor: pointer;
 }
+
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.images img{
+  max-width: 48%;
+}

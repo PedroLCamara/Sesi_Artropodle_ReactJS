@@ -16,6 +16,7 @@ export const Game = () => {
     const [lifes, setLifes] = useState(3);
     const [levelAnimal, setLevelAnimal] = useState({});
     const [endGameMsg, setEgMsg] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
     let history = useNavigate();
 
     const readLevelsData = () => {
@@ -50,6 +51,7 @@ export const Game = () => {
         e.preventDefault();
         const value = e.target.value;
         console.log(value);
+        setIsLoading(true);
         if (lifes <= 0) {
             history('/')
         }
@@ -58,7 +60,7 @@ export const Game = () => {
                 setLifes(0);
                 setEgMsg("Você perdeu, que pena! A resposta correta é: " + levelAnimal.group + " e o animal é " + levelAnimal.name)
             }
-            else{
+            else {
                 setEgMsg("Você ganhou, parabéns! A resposta correta é: " + levelAnimal.group + " e o animal é " + levelAnimal.name)
             }
         }
@@ -66,7 +68,7 @@ export const Game = () => {
             if (e.target.value !== levelAnimal.group) {
                 setLifes(1);
             }
-            else{
+            else {
                 setEgMsg("Você ganhou, parabéns! A resposta correta é: " + levelAnimal.group + " e o animal é " + levelAnimal.name)
             }
         }
@@ -76,15 +78,16 @@ export const Game = () => {
                 img.style.filter = "unset";
                 setLifes(2);
             }
-            else{
+            else {
                 const img = document.getElementById("level-img");
                 img.style.filter = "unset";
                 setEgMsg("Você ganhou, parabéns! A resposta correta é: " + levelAnimal.group + " e o animal é " + levelAnimal.name)
             }
         }
-        else{
+        else {
             history('/')
         }
+        setIsLoading(false);
     }
 
     useEffect(() => {
@@ -115,9 +118,9 @@ export const Game = () => {
             </section>
             <section className="game-text">
                 <h1>{
-                        endGameMsg !== "" ?
+                    endGameMsg !== "" ?
                         endGameMsg : "Qual o meu subgrupo?"
-                    }</h1>
+                }</h1>
                 <span>{
                     levelAnimal !== {} &&
                         lifes == 2 ?
@@ -134,13 +137,23 @@ export const Game = () => {
                     }
                 </div>
             </section>
-            <section className="game-btns">
-                 <button onClick={(e) => computeGuess(e)} value={"Aracnídeos"}>Aracnídeos</button>
-                 <button onClick={(e) => computeGuess(e)} value={"Insetos"}>Insetos</button>
-                 <button onClick={(e) => computeGuess(e)} value={"Diplópodes"}>Diplópodes</button>
-                 <button onClick={(e) => computeGuess(e)} value={"Crustáceos"}>Crustáceos</button>
-                 <button onClick={(e) => computeGuess(e)} value={"Quilópodes"}>Quilópodes</button>
-            </section>
+            {
+                !isLoading ?
+                    <section className="game-btns">
+                        <button onClick={(e) => computeGuess(e)} value={"Aracnídeos"}>Aracnídeos</button>
+                        <button onClick={(e) => computeGuess(e)} value={"Insetos"}>Insetos</button>
+                        <button onClick={(e) => computeGuess(e)} value={"Diplópodes"}>Diplópodes</button>
+                        <button onClick={(e) => computeGuess(e)} value={"Crustáceos"}>Crustáceos</button>
+                        <button onClick={(e) => computeGuess(e)} value={"Quilópodes"}>Quilópodes</button>
+                    </section> :
+                    <section className="game-btns">
+                    <button disabled={true} onClick={(e) => computeGuess(e)} value={"Aracnídeos"}>Aracnídeos</button>
+                    <button disabled={true} onClick={(e) => computeGuess(e)} value={"Insetos"}>Insetos</button>
+                    <button disabled={true} onClick={(e) => computeGuess(e)} value={"Diplópodes"}>Diplópodes</button>
+                    <button disabled={true} onClick={(e) => computeGuess(e)} value={"Crustáceos"}>Crustáceos</button>
+                    <button disabled={true} onClick={(e) => computeGuess(e)} value={"Quilópodes"}>Quilópodes</button>
+                </section>
+                }
         </main>
     )
 }
